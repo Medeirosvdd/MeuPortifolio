@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="sobre.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <span class="fas fa-bars"></span>
+            </div>
+            <div class="logo">
+                Portfólio
+            </div>
+            <div class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </div>
+            <div class="search-icon">
+                <span class="fas fa-search"></span>
+            </div>
+            <div class="cancel-icon">
+                <span class="fas fa-times"></span>
+            </div>
+
+        </nav>
+
+
+        <script>
+            const menuBtn = document.querySelector(".menu-icon span");
+            const searchBtn = document.querySelector(".search-icon");
+            const cancelBtn = document.querySelector(".cancel-icon");
+            const items = document.querySelector(".nav-items");
+            const form = document.querySelector("form");
+            menuBtn.onclick = () => {
+                items.classList.add("active");
+                menuBtn.classList.add("hide");
+                searchBtn.classList.add("hide");
+                cancelBtn.classList.add("show");
+            }
+            cancelBtn.onclick = () => {
+                items.classList.remove("active");
+                menuBtn.classList.remove("hide");
+                searchBtn.classList.remove("hide");
+                cancelBtn.classList.remove("show");
+                form.classList.remove("active");
+                cancelBtn.style.color = "#ff3d00";
+            }
+            searchBtn.onclick = () => {
+                form.classList.add("active");
+                searchBtn.classList.add("hide");
+                cancelBtn.classList.add("show");
+            }
+        </script>
+    </header>
+    <hr>
+    <div class="container">
+        <div class="ini">
+            <img src="./img/eu.jpg">
+            <div class="tt">
+                <H1 class="Mnome">Murilo Mello de Medeiros</H1>
+                <h5 class="aa">Estudante de Tecnologia da Informação</h5>
+            </div>
+        </div>
+        <hr>
+        <main>
+            <h2 class="sub">Resumo Pessoal:</h2>
+            <p class="test">Bem-vindo ao meu portfólio!👋 <br>
+                Sou um estudante de Tecnologia da Informação na Universidade Luterana do Brasil (Ulbra), apaixonado por
+                programação e resolução de problemas.
+            </p>
+
+            <h2 class="sub">Formação Acadêmica:</h2>
+            <ul class="test2">
+                <li>Curso: Tecnologia da informação</li>
+                <li>Instituição: Universidade Luterana do Brasil (<a href="https://www.ulbra.br">ULBRA</a>)</li>
+                <li>Período: 2024 - Em andamento</li>
+            </ul>
+            <h2 class="sub">Habilidades Técnicas:</h2>
+            <ul class="test3">
+                <li> <img src="img/java logo ´p.png" alt="">Linguagens: Java (básico)</li>
+                <li> <img src="img/HTML5_logo_and_wordmark.png" alt="">Linguagens: HTMl (básico)</li>
+            </ul>
+
+            <h2 class="sub">Objetivos de Carreira:</h2>
+            <ul class="test">
+                <li>Curto prazo: Concluir o curso e aprofundar conhecimentos em progamação</li>
+                <li>Longo prazo: Torna-se desenvolvedor de software, explorando áreas.</li>
+            </ul>
+        </main>
+        <hr>
+        <footer>
+            <a href="https://github.com/Medeirosvdd" target="_blank" rel="noopener noreferrer">
+                <img src="./img/github logo branca.png">
+                <p></p>
+            </a>
+            <a href="https://www.instagram.com/ft_medeiros/" target="_blank" rel="noopener noreferrer">
+                <img src="./img/Instagram_icon.png.webp">
+                <p></p>
+            </a>
+            <a href=" https://wa.me/qr/KQUIUQQICCDLF1 " target="_blank" rel="noopener noreferrer">
+                <img src="./img/WhatsApp logo.png">
+                <p></p>
+            </a>
+        </footer>
+        <h6 class="cop">© 2024 Medeiros, S.A</h6>
+
+    </div>
+</body>
+
+</html>
